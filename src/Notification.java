@@ -1,4 +1,6 @@
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 public class Notification {
     private int notificationID;
@@ -49,6 +51,40 @@ public class Notification {
     public String toString() {
         return "Notification ID: " + notificationID + ", Client ID: " + clientID + ", Message: " + message + ", Date: " + date;
     }
+
+    public static class NotificationService {
+        private List<Notification> notifications;
+
+        public NotificationService() {
+            this.notifications = new ArrayList<>();
+        }
+
+        public void sendNotification(int clientID, String message, String method) {
+            int notificationID = notifications.size() + 1;
+            Notification notification = new Notification(notificationID, clientID, message, new Date());
+            notifications.add(notification);
+
+            // Simulate sending notification
+            if (method.equalsIgnoreCase("email")) {
+                System.out.println("Sending email to client " + clientID + ": " + message);
+            } else if (method.equalsIgnoreCase("phone")) {
+                System.out.println("Sending SMS to client " + clientID + ": " + message);
+            } else {
+                System.out.println("Unknown method. Notification not sent.");
+            }
+        }
+
+        public List<Notification> getNotificationsForClient(int clientID) {
+            List<Notification> clientNotifications = new ArrayList<>();
+            for (Notification notification : notifications) {
+                if (notification.getClientID() == clientID) {
+                    clientNotifications.add(notification);
+                }
+            }
+            return clientNotifications;
+        }
+    }
 }
+
 
 
