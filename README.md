@@ -78,14 +78,15 @@ Once the application is running, follow these instructions to use the YYC Pet Re
 5. **View Historical Records**:
    - Select option `5` to view historical records of bookings.
    - The system will display all historical booking records.
-
-6. **Exit**:
+     
+6. **Send Notification**:
+   - Select option `7` to send a notification about a booking to a client.
+   - You can choose the method of sending a notification and the message to be written.
+     
+7. **Exit**:
    - Select option `6` to exit the application.
 
 ### Additional Features
-
-- **Send Notification**:
-  - The staff can send notifications to clients about their bookings and payments.
 
 - **Manage Care Profile**:
   - The staff can add, update, or delete care profiles for pets.
