@@ -20,14 +20,14 @@ To run the YYC Pet Resort Management System application, follow these steps:
 1. **Clone the Repository**:
    - Clone the project repository from GitHub to your local machine:
      ```
-     git clone https://github.com/yourusername/YYCPetResort.git
+     git clone https://github.com/yourusername/ENSF-380-LAB-2.git
      ```
    - Replace `yourusername` with your actual GitHub username.
 
 2. **Navigate to the Project Directory**:
    - Open your terminal or command prompt and navigate to the project directory:
      ```
-     cd YYCPetResort
+     cd /ENSF380/LAB2
      ```
 
 3. **Compile the Project**:
